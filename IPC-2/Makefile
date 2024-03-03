@@ -3,7 +3,7 @@ all: prime-calculator
 prime-calculator: prime-calculator.o
 	g++ prime-calculator.o -o prime-calculator
 
-do-command.o: prime-calculator.cpp
+prime-calculator.o: prime-calculator.cpp
 	g++ -c prime-calculator.cpp
 
 clean: 
